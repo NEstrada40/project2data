@@ -1,0 +1,14 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  color: tan;
+  background-color: darkgray;
+}
+canvas {
+  margin: auto;
+  display: block;
+}
+
+h1, p {
+  text-align: center;
+}
