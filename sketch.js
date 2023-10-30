@@ -39,6 +39,9 @@ function setup() {
 
 function draw() {
   print(currentPos);
+  if (currentPos > Object.keys(data).length-1) {
+    currentPos = 0;
+  }
 }
 
 function changeBG() {
