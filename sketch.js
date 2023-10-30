@@ -13,17 +13,18 @@ function setup() {
 
   button1 = createButton('<'); //Left Button
   // button1.color(0, 255);
-  button1.size(20, 100);
-  button1.position(0, height/2 - height/8);
+  button1.size(80, 100);
+  button1.position(0, 245);
   button1.mousePressed(leftBut);
  
   button2 = createButton('>'); //Right Button
-  button2.size(20, 100);
-  button2.position(width-20, height/2 - height/8);
+  button2.size(80, 100);
+  button2.position(80, 245);
   button2.mousePressed(rightBut);
 
   selector = createSelect();
-  selector.position(10, 10);
+  selector.size(160, 20)
+  selector.position(0, 0);
   selector.option('slimes');
   selector.option('fungus');
   selector.option('triffids');
