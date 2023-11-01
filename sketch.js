@@ -74,8 +74,8 @@ function showData() {
     
     fill(0, 255, 0);
     textSize(13);
-    text("Weight: " +data[currentPos].volume, 0, 500, 300); // weight
-    text("Volume: " + data[currentPos].weight, 0, 525, 300); // volume
+    text("Weight: " +data[currentPos].weight, 0, 500, 300); // weight
+    text("Volume: " + data[currentPos].volume, 0, 525, 300); // volume
 
     text("Aggression Index: " + data[currentPos].aggression, 300, 500, 300);
     text("Difficulty Rating: " + data[currentPos].diff, 300, 525, 300);
