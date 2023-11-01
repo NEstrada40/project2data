@@ -80,6 +80,9 @@ function showData() {
     text("Aggression Index: " + data[currentPos].aggression, 300, 500, 300);
     text("Difficulty Rating: " + data[currentPos].diff, 300, 525, 300);
 
+    textSize(20);
+    text("Entry " + (currentPos+1), 0, 0, 100);
+
     noFill();
     stroke(0, 150, 0);
     strokeWeight(2);
