@@ -8,7 +8,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(600, 1000);
   background(0);
 
   button1 = createButton('<'); //Left Button
@@ -67,27 +67,46 @@ function showData() {
     fill(255);
     text(data[currentPos].type + ": " + data[currentPos].name.str, 100, 50, 400); //name
 
-    textSize(18);
+    textSize(25);
     fill(0, 255, 0);
     
     text(data[currentPos].description, 100, 250, 400); //description
     
     fill(0, 255, 0);
     textSize(13);
-    text("Weight: " +data[currentPos].weight, 0, 500, 300); // weight
-    text("Volume: " + data[currentPos].volume, 0, 525, 300); // volume
 
-    text("Aggression Index: " + data[currentPos].aggression, 300, 500, 300);
-    text("Difficulty Rating: " + data[currentPos].diff, 300, 525, 300);
+    text("Health: " + data[currentPos].hp, 0, 500, 300); // hp
+    text("Speed: " + data[currentPos].speed, 0, 525, 300); // speed
+
+    text("Weight: " + data[currentPos].weight, 300, 500, 300); // weight
+    text("Volume: " + data[currentPos].volume, 300, 525, 300); // volume
+
+    text("Aggression Index: " + data[currentPos].aggression, 300, 600, 300);
+    text("Difficulty Rating: " + data[currentPos].diff, 300, 625, 300);
+
+    text("Species: " + data[currentPos].species, 0, 600, 300);
+    text("Made From: " + data[currentPos].material, 0, 625, 300);
+
+    text("Aggression Index: " + data[currentPos].aggression, 0, 700, 300);
+    text("Difficulty Rating: " + data[currentPos].diff, 0, 725, 300);
 
     textSize(20);
     text("Entry " + (currentPos+1), 0, 0, 100);
 
+    
+
     noFill();
     stroke(0, 150, 0);
     strokeWeight(2);
+
     rect(55, 485, 200, 75)
     rect(350, 485, 200, 75)
+
+    rect(55, 585, 200, 75)
+    rect(350, 585, 200, 75)
+
+    rect(55, 685, 200, 75)
+    rect(350, 685, 200, 75)
   }
 }
 

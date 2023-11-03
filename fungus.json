@@ -145,12 +145,31 @@
     "type": "MONSTER",
     "name": { "str": "fungaloid shambler" },
     "description": "A large white fungus, a bulging gray stalk supporting a bloom at the top.  Spores float from its gills and tendrils extend from the base.  Chunks of rock, metal, bone, and wood are held by tendrils as a kind of armor.",
-    "copy-from": "mon_fungaloid",
+    
+    
+    
+    "default_faction": "fungus",
+    "species": [ "FUNGUS" ],
+    "diff": 2,
     "volume": "12 L",
     "weight": "160 kg",
     "hp": 150,
+
     "speed": 20,
+    "material": [ "veggy" ],
+    "symbol": "F",
+    "color": "light_gray",
+    "aggression": -50,
+    "morale": 100,
+    "melee_skill": 2,
+    "melee_dice": 1,
+    "melee_dice_sides": 4,
+    "melee_damage": [ { "damage_type": "cut", "amount": 0 } ],
     "bleed_rate": 0,
+    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "harvest": "fungaloid",
+    "death_function": { "effect": { "id": "death_fungus", "hit_self": true } },
+    "flags": [ "STUMBLES", "POISON", "NO_BREATHE", "NOHEAD" ],
     "special_attacks": [
       [ "FUNGUS", 20 ],
       {
